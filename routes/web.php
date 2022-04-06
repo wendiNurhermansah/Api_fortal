@@ -22,5 +22,10 @@ $router->get('/key', function() {
 });
 
 
+$router->group(['prefix' => 'teknologi'], function () use ($router) {
+    //technology
+    $router->get('/', 'TechnologyController@index');
+    $router->get('/{id}', 'TechnologyController@show');
+    $router->post('/create_teknologi', 'TechnologyContoller@create');
 
-
+});

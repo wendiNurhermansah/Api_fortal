@@ -15,19 +15,19 @@ class CreatNewsTable extends Migration
     {
         Schema::create('news', function (Blueprint $table) {
             $table->id();
-            $table->string('id_tek');
-            $table->string('id_sport');
-            $table->string('id_oto');
-            $table->string('id_food');
-            $table->string('id_finance');
-            $table->string('id_enter');
-            $table->string('id_travel');
-            $table->string('id_health');
-            $table->string('id_edu');
-            $table->string('id_properti');
-            $table->string('id_ekonomi');
-            $table->string('id_nas');
-            $table->string('id_inter');
+            $table->string('id_tek')->nullable();
+            $table->string('id_sport')->nullable();
+            $table->string('id_oto')->nullable();
+            $table->string('id_food')->nullable();
+            $table->string('id_finance')->nullable();
+            $table->string('id_enter')->nullable();
+            $table->string('id_travel')->nullable();
+            $table->string('id_health')->nullable();
+            $table->string('id_edu')->nullable();
+            $table->string('id_properti')->nullable();
+            $table->string('id_ekonomi')->nullable();
+            $table->string('id_nas')->nullable();
+            $table->string('id_inter')->nullable();
             $table->timestamps();
         });
     }

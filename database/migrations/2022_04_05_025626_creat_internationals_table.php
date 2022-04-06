@@ -15,13 +15,13 @@ class CreatInternationalsTable extends Migration
     {
         Schema::create('internationals', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_categori');
-            $table->string('judul');
-            $table->string('isi_portal');
-            $table->string('penulis');
-            $table->string('hari');
-            $table->string('tgl');
-            $table->string('gambar');
+            $table->integer('id_categori')->nullable();
+            $table->string('judul')->nullable();
+            $table->text('isi_portal')->nullable();
+            $table->string('penulis')->nullable();
+            $table->string('hari')->nullable();
+            $table->string('tgl')->nullable();
+            $table->string('gambar')->nullable();
             $table->timestamps();
         });
     }
